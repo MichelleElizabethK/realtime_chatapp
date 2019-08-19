@@ -1,0 +1,62 @@
+<div>
+    <div class="row">
+        <div class="col col-sm-12">
+            <div class="card mb-3">
+                <div class="card-header bg-dark text-white">
+                    Profile
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="editProfileForm">
+
+                        <div> <img src={{image}} height="150 px" width="150 px"> </div>
+                    
+                        <input type="file" (change)="onFileChanged($event)" #fileInput>
+                        <fieldset class="form-group">
+                            <button type="button" class="btn btn-primary btn-dark mr-4" (click)="upload()"
+                                [routerLink]="['/profile']">
+                                Upload</button>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label>First Name</label>
+                            <input type="text" formControlName="firstName"
+                                class="form-control input-underline input-lg "
+                                [ngClass]="{ 'input-error': submitted &&  editForm.firstName.errors }"
+                                placeholder="{{ 'First Name'  }}">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" formControlName="lastName" class="form-control input-underline input-lg "
+                                [ngClass]="{ 'input-error': submitted &&  editForm.lastName.errors }"
+                                placeholder="{{ 'Last Name'  }}">
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label>Phone</label>
+                            <input type="text" formControlName="phone" class="form-control input-underline input-lg"
+                                [ngClass]="{ 'input-error': submitted &&  editForm.phone.errors }"
+                                placeholder="{{ 'Phone'  }}">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>City</label>
+                            <input type="text" formControlName="city" class="form-control input-underline input-lg"
+                                [ngClass]="{ 'input-error': submitted &&  editForm.city.errors }"
+                                placeholder="{{ 'City'  }}">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>State</label>
+                            <input type="text" formControlName="state" class="form-control input-underline input-lg"
+                                [ngClass]="{ 'input-error': submitted &&  editForm.state.errors }"
+                                placeholder="{{ 'Phone'  }}">
+                        </fieldset>
+
+                        <button type="button" class="btn btn-primary btn-dark mr-4" (click)="edit()">Save</button>
+                        <button type="reset" class="btn btn-secondary btn-dark"
+                            [routerLink]="['/profile']">Clear</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
