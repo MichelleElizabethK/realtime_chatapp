@@ -1,0 +1,9 @@
+{
+    "technicalError": "An unexpected error has occurred. Please try again later.",
+    "invalidApiKey": "Enter a valid API Key.",
+    "invalidSessionKey": "Your session has expired. Please login again to continue.",
+    "jwtTokenMissing":"Unauthorized User",
+    "tokenExpired":"Authentication token has expired",
+    "invalidToken":"Invalid authentication token"
+
+}

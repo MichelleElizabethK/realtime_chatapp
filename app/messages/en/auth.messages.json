@@ -1,0 +1,23 @@
+{
+    "emailRequired":"Enter email id",
+    "firstNameRequired":"Enter first name",
+    "lastNameRequired":"Enter last name",
+    "userNameRequired":"Enter user name",
+    "passwordRequired":"Enter password",
+    "mobileUserNotExists":"This email is not registered with us",
+    "invalidPassword":"Wrong Password",
+    "successLogin":"You have been logged in successfully.",
+    "forgotSuccess":"New password has been sent to your email id.",
+    "forgotPassword":"Forgot Password",
+    "userExists": "This user is already registered",
+    "userNameTaken": "This username has been taken. Try another one.",
+
+    "grantTypeRequired":"Grant Type is required",
+    "invalidGrantType":"Invalid grant type.",
+    "clientIdRequired":"Client id is required",
+    "invalidClientId":"Invalid client id.",
+    "clientSecretRequired":"Client secret is required",
+    "invalidClientSecret":"Invalid client secret",
+    "tokenGeneratedSuccess":"New access token  has been created",
+    "refreshTokenRequired":"Refresh Token required"
+}

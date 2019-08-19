@@ -1,0 +1,8 @@
+{
+    "displayDetails": "User details",
+    "userUpdated": "Profile updated",
+    "imageUploadError": "Error uploading image",
+    "imageUploaded": "Image uploaded",
+    "emailRequired": "Email id is required"
+
+}
